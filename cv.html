@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Samuel Silale | Curriculum Vitae</title>
+
+<style>
+:root {
+    --red: #c82039;
+    --text: #25252b;
+    --muted: #60606b;
+    --line: #dedee5;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f0f0f4;
+    color: var(--text);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 1.65;
+}
+
+.toolbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    padding: 15px;
+    background: #17171d;
+}
+
+.toolbar a,
+.toolbar button {
+    border: 1px solid #41414a;
+    border-radius: 8px;
+    padding: 11px 17px;
+    background: #24242c;
+    color: white;
+    font-size: 13px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.toolbar .primary {
+    background: var(--red);
+    border-color: var(--red);
+}
+
+.document {
+    max-width: 850px;
+    margin: 35px auto;
+    padding: 45px 55px;
+    background: white;
+    box-shadow: 0 10px 40px #0000000c;
+}
+
+header {
+    border-bottom: 3px solid var(--red);
+    padding-bottom: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 34px;
+    letter-spacing: -1px;
+}
+
+.title {
+    color: var(--red);
+    font-size: 15px;
+    font-weight: bold;
+    margin: 5px 0 13px;
+}
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 18px;
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.contact a {
+    color: var(--muted);
+    overflow-wrap: anywhere;
+}
+
+section {
+    margin-top: 25px;
+}
+
+h2 {
+    color: var(--red);
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid var(--line);
+    margin: 0 0 13px;
+}
+
+h3 {
+    font-size: 14px;
+    margin: 0;
+}
+
+p {
+    margin: 5px 0;
+}
+
+.muted {
+    color: var(--muted);
+}
+
+ul {
+    padding-left: 20px;
+    margin: 8px 0;
+}
+
+li {
+    margin-bottom: 4px;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: 145px 1fr;
+    gap: 9px 15px;
+}
+
+.skills strong {
+    font-size: 12px;
+}
+
+.skills span {
+    color: var(--muted);
+}
+
+.project {
+    margin-bottom: 13px;
+}
+
+@media (max-width: 600px) {
+    .document {
+        margin: 12px;
+        padding: 25px 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .skills {
+        grid-template-columns: 1fr;
+        gap: 3px;
+    }
+
+    .skills span {
+        margin-bottom: 10px;
+    }
+}
+
+@media print {
+    @page {
+        size: A4;
+        margin: 14mm;
+    }
+
+    body {
+        background: white;
+        font-size: 11px;
+        line-height: 1.5;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .toolbar {
+        display: none !important;
+    }
+
+    .document {
+        max-width: none;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+    }
+
+    section {
+        margin-top: 17px;
+    }
+
+    h2 {
+        break-after: avoid;
+    }
+
+    .project {
+        break-inside: avoid;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="toolbar">
+    <a href="index.html">← Back to Website</a>
+    <button class="primary" onclick="window.print()">Print / Save as PDF</button>
+</div>
+
+<main class="document">
+
+<header>
+    <h1>Samuel Silale</h1>
+    <div class="title">Software & Network Engineer</div>
+
+    <div class="contact">
+        <span>Phone: 0702494109</span>
+        <span>Email: <a href="mailto:silalesam6@gmail.com">silalesam6@gmail.com</a></span>
+        <span>Kenya</span>
+    </div>
+
+    <div class="contact" style="margin-top:7px">
+        <span>GitHub: github.com/samsilale</span>
+        <span>LinkedIn: linkedin.com/in/sam-lemuya-140191371/</span>
+    </div>
+</header>
+
+<section>
+    <h2>Professional Profile</h2>
+    <p>
+        Software engineering diploma holder from Zetech University with an
+        interest in software development, computer networking, and information
+        and communication technology. Familiar with programming languages,
+        web technologies, database systems, and software development tools.
+        Interested in applying technical knowledge, solving problems, and
+        developing practical technology solutions while continuing to learn
+        and grow professionally.
+    </p>
+</section>
+
+<section>
+    <h2>Education</h2>
+
+    <h3>Diploma in Software Engineering</h3>
+    <p>Zetech University</p>
+    <p class="muted">Completed: 2026</p>
+</section>
+
+<section>
+    <h2>Industrial Attachment</h2>
+
+    <h3>ICT Department — Kenya Broadcasting Corporation (KBC)</h3>
+    <p class="muted">Industrial Attachment</p>
+    <p>
+        Completed an industrial attachment in the ICT department at Kenya
+        Broadcasting Corporation. Further details about specific duties,
+        technical responsibilities, and attachment dates can be added to
+        accurately reflect the work undertaken.
+    </p>
+</section>
+
+<section>
+    <h2>Technical Skills</h2>
+
+    <div class="skills">
+        <strong>Programming</strong>
+        <span>Java, C, C++, C#, PHP, JavaScript</span>
+
+        <strong>Web Development</strong>
+        <span>HTML5, CSS3, Bootstrap, responsive web design</span>
+
+        <strong>Database</strong>
+        <span>MySQL, database design, database management systems</span>
+
+        <strong>Development Tools</strong>
+        <span>Git, GitHub, Visual Studio Code, XAMPP, NetBeans, IntelliJ IDEA</span>
+
+        <strong>Professional Interests</strong>
+        <span>Software development, computer networking, and ICT systems</span>
+    </div>
+</section>
+
+<section>
+    <h2>Software Projects</h2>
+
+    <div class="project">
+        <h3>YeTu — Social Platform</h3>
+        <p>
+            A Kenya-focused social platform concept bringing together
+            social networking, marketplace services, events, and lost-and-found
+            features.
+        </p>
+        <p class="muted">Technologies: PHP, MySQL, JavaScript, HTML, CSS</p>
+    </div>
+
+    <div class="project">
+        <h3>HouseHunt — House-Hunting Platform</h3>
+        <p>
+            A property platform concept designed to help house seekers find
+            properties listed by landlords and caretakers.
+        </p>
+        <p class="muted">Technologies: PHP, MySQL, HTML, CSS</p>
+    </div>
+
+    <div class="project">
+        <h3>HireMe — Talent Marketplace</h3>
+        <p>
+            A recruitment platform concept designed to connect job seekers
+            and employers through professional profiles and job opportunities.
+        </p>
+        <p class="muted">Technologies: PHP, MySQL, HTML, CSS, JavaScript</p>
+    </div>
+
+    <div class="project">
+        <h3>Barter — Item Exchange Platform</h3>
+        <p>
+            An item-exchange platform concept designed to allow users to
+            list items and arrange exchanges.
+        </p>
+        <p class="muted">Technologies: PHP, MySQL, HTML, CSS</p>
+    </div>
+</section>
+
+<section>
+    <h2>Professional Links</h2>
+    <p>GitHub: https://github.com/samsilale</p>
+    <p>LinkedIn: https://www.linkedin.com/in/sam-lemuya-140191371/</p>
+</section>
+
+</main>
+
+</body>
+</html>
